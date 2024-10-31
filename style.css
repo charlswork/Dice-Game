@@ -1,0 +1,76 @@
+/* style.css */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #34353e;
+}
+
+.dice-container {
+  display: flex;
+  gap: 40px; /* Spacing between the dice */
+}
+
+.die {
+  width: 100px;
+  height: 100px;
+  background-color: #930211;
+  border: 1px solid #333;
+  border-radius: 10px;
+  position: relative; /* For absolute positioning of dots */
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(248, 242, 242);
+  border-radius: 50%; /* Make it round */
+  position: absolute;
+}
+p {
+  text-align: center;
+  color: #51c49c;
+  font-family: "Kaushan Script", cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2rem;
+
+}
+h1 {
+  color: #51c49c;
+  font-size: 4rem;
+  font-family: "Creepster", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+/* Positioning the dots for each die face */
+.die .dot:nth-child(1) {
+  top: 10px;
+  left: 20px;
+} /* Top left */
+.die .dot:nth-child(2) {
+  top: 10px;
+  left: 60px;
+} /* Top left */
+
+/* Positioning the dots for each die face */
+.die .dot:nth-child(3) {
+  top: 40px;
+  left: 20px;
+} /* Top left */
+.die .dot:nth-child(4) {
+  top: 40px;
+  left: 60px;
+} /* Top left */
+
+/* Positioning the dots for each die face */
+.die .dot:nth-child(5) {
+  top: 70px;
+  left: 20px;
+} /* Top left */
+.die .dot:nth-child(6) {
+  top: 70px;
+  left: 60px;
+} /* Top left */
